@@ -1,0 +1,134 @@
+body{
+    background: linear-gradient(135deg, #8E35EF, #ff6633);
+    font-family:'Trebuchet MS';
+    font-size:25px;
+}
+
+.rectangle{
+    width:22rem;
+    height:34rem;
+    margin: 10vh auto 0;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:30px 46px auto;
+    background:white;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    box-shadow:1px 5px 15px 0px #503b44;
+}
+@media screen and (max-width:600px){
+.rectangle{
+    width:20rem;
+}
+}
+.top-bar{
+    grid-column:1/-1;
+}
+
+.top-bar img {
+    width:auto;
+    height:auto;
+    max-width:15px;
+    max-height:10px;
+    margin: 10px 2px;
+}
+
+.top-bar img:nth-child(1){
+    margin-left:10px;
+}
+
+.work-area{
+    grid-column:1/-1;
+    text-align-last: right;
+    margin:auto 10px;
+    font-size:30px;
+    color:#ada4a2;
+}
+
+.answer-area{
+    grid-column:1/-1;
+    text-align-last: right;
+    margin:auto 10px;
+    font-size:60px;
+}
+
+.power-symbol{
+    background:#ebcbdd;
+    grid-column:1/4;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+.power-symbol div{
+    border:1px solid #b4ac8f;
+    border-left-style:hidden;
+    border-bottom-style: hidden;
+}
+.power-symbol div >p{
+    text-align: center;
+}
+.power-symbol div:nth-child(2){
+    font-weight:900;
+}
+
+.arithmetic-sign{
+    background:linear-gradient(180deg, #f5c014,#ec7234);
+    grid-column:4/-1;
+    grid-row:4/6;
+    display:grid;
+    border-bottom-right-radius: 15px;
+}
+.arithmetic-sign div{
+    border:1px solid #b4ac8f;
+    border-right-style:hidden;
+    border-bottom-style: hidden;
+}
+.arithmetic-sign div > p{
+    text-align: center;
+}
+
+.numbers{
+    background:#faeded;
+    grid-column:1/4;
+    border-radius:0 0 0 5px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    border-bottom-left-radius: 15px;
+}
+.numbers div{
+    border:1px solid #b4ac8f;
+    border-left-style:hidden;
+    border-bottom-style: hidden;
+}
+.numbers div >p{
+    text-align: center;
+}
+
+.span{
+    grid-column:span 2;
+    text-align-last: left;
+}
+.span p{
+    margin-left:25%;
+}
+.other-calculators{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px auto;
+    width:80%;
+    justify-content: space-between;
+}
+
+.other-calculators div>a{
+    text-decoration:none;
+    color:white;
+}
+
+@media screen and (max-width:640px){
+.other-calculators{
+    flex-direction:column;
+    align-items:center;
+}
+}
